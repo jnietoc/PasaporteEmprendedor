@@ -65,3 +65,5 @@
 
 </div>
 
+<uploadr:demo/>
+
