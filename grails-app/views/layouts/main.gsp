@@ -17,6 +17,7 @@
 		<asset:stylesheet src="offcanvas.css"/>
 		<asset:javascript src="uploadr.manifest.js"/>
 		<asset:stylesheet href="uploadr.manifest.css"/>
+		<asset:stylesheet src="signin.css"/>
 		<g:layoutHead/>
 	</head>
 	<body>
@@ -60,13 +61,13 @@
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="#">Link</a></li>
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+							<sec:ifNotLoggedIn><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Iniciar Session <span class="caret"></span></a></sec:ifNotLoggedIn>
+							<sec:ifLoggedIn><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><sec:username/><span class="caret"></span></a></sec:ifLoggedIn>
 							<ul class="dropdown-menu">
-								<li><a href="#">Action</a></li>
-								<li><a href="#">Another action</a></li>
-								<li><a href="#">Something else here</a></li>
-								<li role="separator" class="divider"></li>
-								<li><a href="#">Separated link</a></li>
+								<sec:ifNotLoggedIn><li><a href="${createLink(uri: '/login')}">Iniciar Session</a></li></sec:ifNotLoggedIn>
+								<sec:ifNotLoggedIn><li><a href="#">Registrarte</a></li></sec:ifNotLoggedIn>
+								<sec:ifLoggedIn><li role="separator" class="divider"></li>
+								<li><a href="${createLink(controller: 'logout')}">Cerrar Session</a></li></li></sec:ifLoggedIn>
 							</ul>
 						</li>
 					</ul>

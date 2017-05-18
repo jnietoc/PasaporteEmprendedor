@@ -134,3 +134,4 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 
 grails.assets.plugin."twitter-bootstrap".excludes = ["**/*.less"]
 grails.assets.plugin."twitter-bootstrap".includes = ["bootstrap.less"]
+grails.plugin.springsecurity.logout.postOnly = false
