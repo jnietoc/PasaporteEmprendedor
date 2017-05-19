@@ -1,13 +1,11 @@
 <%@ page import="com.pasaporte.emprendedor.compras.Producto" %>
 
-
-
-<div class="fieldcontain ${hasErrors(bean: productoInstance, field: 'codigo', 'error')} required">
+<div class="text-field ${hasErrors(bean: productoInstance, field: 'codigo', 'error')} required">
 	<label for="codigo">
 		<g:message code="producto.codigo.label" default="Codigo" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="codigo" required="" value="${productoInstance?.codigo}"/>
+	<g:textField name="codigo" class="text-field" required="" value="${productoInstance?.codigo}"/>
 
 </div>
 
@@ -16,7 +14,7 @@
 		<g:message code="producto.nombre.label" default="Nombre" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="nombre" maxlength="30" required="" value="${productoInstance?.nombre}"/>
+	<g:textField name="nombre" class="text-field" maxlength="30" required="" value="${productoInstance?.nombre}"/>
 
 </div>
 
@@ -25,7 +23,7 @@
 		<g:message code="producto.categoria.label" default="Categoria" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:select id="categoria" name="categoria.id" from="${com.pasaporte.emprendedor.compras.Categoria.list()}" optionKey="id" required="" value="${productoInstance?.categoria?.id}" class="many-to-one"/>
+	<g:select id="categoria" name="categoria.id" from="${com.pasaporte.emprendedor.compras.Categoria.list()}" optionKey="id" required="" value="${productoInstance?.categoria?.id}" class="many-to-one"></g:select>
 
 </div>
 
@@ -52,7 +50,7 @@
 		<g:message code="producto.precio.label" default="Precio" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:field name="precio" value="${fieldValue(bean: productoInstance, field: 'precio')}" required=""/>
+	<g:field name="precio" value="${fieldValue(bean: productoInstance, field: 'precio')}" required=""  type="value"/>
 
 </div>
 
@@ -61,9 +59,7 @@
 		<g:message code="producto.imagen.label" default="Imagen" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="imagen" required="" value="${productoInstance?.imagen}"/>
+    <input type="file" name="imagen" required="" value="${productoInstance?.imagen}"/>
 
 </div>
-
-<uploadr:demo/>
 

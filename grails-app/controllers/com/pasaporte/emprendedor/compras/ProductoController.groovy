@@ -43,7 +43,7 @@ class ProductoController {
 
         request.withFormat {
             form multipartForm {
-                flash.message = message(code: 'default.created.message', args: [message(code: 'producto.label', default: 'Producto'), productoInstance.id])
+                flash.message = message(code: 'default.created.message', args: [message(code: 'Producto.label', default: 'Producto'), productoInstance.id])
                 redirect productoInstance
             }
             '*' { respond productoInstance, [status: CREATED] }
@@ -101,7 +101,7 @@ class ProductoController {
     protected void notFound() {
         request.withFormat {
             form multipartForm {
-                flash.message = message(code: 'default.not.found.message', args: [message(code: 'producto.label', default: 'Producto'), params.id])
+                flash.message = message(code: 'default.not.found.message', args: [message(code: 'Producto.label', default: 'Producto'), params.id])
                 redirect action: "index", method: "GET"
             }
             '*'{ render status: NOT_FOUND }

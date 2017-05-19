@@ -90,7 +90,7 @@
     <form class="form-signin" action='${postUrl}' method='POST' id='loginForm' autocomplete="off">
         <h2 class="form-signin-heading"><g:message code="pasaporte.emprendedor.login.header.label"/></h2>
         <g:if test='${flash.message}'>
-            <div class='login_message'>${flash.message}</div>
+            <div class='alert alert-danger' role="alert">${flash.message}</div>
         </g:if>
         <label class="sr-only" for="username"><g:message code="springSecurity.login.username.label"/>:</label>
         <input class="form-control" name="j_username" id="username" autofocus="" required="" type="text" placeholder="${message(code: "springSecurity.login.username.label")}">

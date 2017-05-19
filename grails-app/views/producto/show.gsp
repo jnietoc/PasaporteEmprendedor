@@ -8,13 +8,14 @@
 		<title><g:message code="default.show.label" args="[entityName]" /></title>
 	</head>
 	<body>
+	<ul class="nav nav-tabs nav-justified">
+		<li role="presentation" class="active"><a href="${createLink(uri: '/')}">Home</a></li>
+		<li role="presentation"><g:link controller="producto" action="index">Lista Productos</g:link></li>
+		<li role="presentation"><g:link controller="producto" action="show">Agregar Nuevo</g:link></li>
+	</ul>
 		<a href="#show-producto" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
 		<div class="nav" role="navigation">
-			<ul>
-				<li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
-				<li><g:link class="list" action="index"><g:message code="default.list.label" args="[entityName]" /></g:link></li>
-				<li><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></li>
-			</ul>
+
 		</div>
 		<div id="show-producto" class="content scaffold-show" role="main">
 			<h1><g:message code="default.show.label" args="[entityName]" /></h1>
@@ -82,7 +83,7 @@
 					<span id="imagen-label" class="property-label"><g:message code="producto.imagen.label" default="Imagen" /></span>
 					
 						<span class="property-value" aria-labelledby="imagen-label"><g:fieldValue bean="${productoInstance}" field="imagen"/></span>
-					
+
 				</li>
 				</g:if>
 			
@@ -94,5 +95,5 @@
 				</fieldset>
 			</g:form>
 		</div>
-	</body>
+	</body>zz
 </html>

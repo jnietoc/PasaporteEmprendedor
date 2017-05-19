@@ -19,4 +19,5 @@ class Producto {
         precio nullable: false, min: 1.0
         imagen blank: false
     }
+
 }

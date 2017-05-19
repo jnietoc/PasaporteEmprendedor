@@ -1,18 +1,23 @@
+<%@ page import="com.pasaporte.emprendedor.compras.Producto" %>
+<%@ page import="com.pasaporte.emprendedor.compras.Categoria" %>
+
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta name="layout" content="main">
-		<g:set var="entityName" value="${message(code: 'producto.label', default: 'Producto')}" />
+		<g:set var="entityName" value="${message(code: 'Producto.label', default: 'Producto')}" />
 		<title><g:message code="default.create.label" args="[entityName]" /></title>
 	</head>
 	<body>
-		<a href="#create-producto" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
-		<div class="nav" role="navigation">
-			<ul>
-				<li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
-				<li><g:link class="list" action="index"><g:message code="default.list.label" args="[entityName]" /></g:link></li>
-			</ul>
-		</div>
+		<ul class="nav nav-tabs nav-justified">
+
+			<li role="presentation"><g:link controller="producto" action="index">Lista Productos</g:link></li>
+            <li role="presentation"><g:link controller="categoria" action="create">Agregar Nuevo Categoria</g:link>
+            <li role="presentation"><g:link>Agregar Nuevo Color</g:link></li>
+		</ul>
+
+
 		<div id="create-producto" class="content scaffold-create" role="main">
 			<h1><g:message code="default.create.label" args="[entityName]" /></h1>
 			<g:if test="${flash.message}">
@@ -21,7 +26,7 @@
 			<g:hasErrors bean="${productoInstance}">
 			<ul class="errors" role="alert">
 				<g:eachError bean="${productoInstance}" var="error">
-				<li <g:if test="${error in org.springframework.validation.FieldError}">data-field-id="${error.field}"</g:if>><g:message error="${error}"/></li>
+				<li <g:if test="${error in FieldError}">data-field-id="${error.field}"</g:if>><g:message error="${error}"/></li>
 				</g:eachError>
 			</ul>
 			</g:hasErrors>
@@ -29,7 +34,7 @@
 				<fieldset class="form">
 					<g:render template="form"/>
 				</fieldset>
-				<fieldset class="buttons">
+				<fieldset class="button">
 					<g:submitButton name="create" class="save" value="${message(code: 'default.button.create.label', default: 'Create')}" />
 				</fieldset>
 			</g:form>

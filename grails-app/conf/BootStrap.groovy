@@ -18,12 +18,12 @@ class BootStrap {
 
         Color rojo = new Color(color: "Rojo").save()
         Color azul = new Color(color: "Azul").save()
-        Color blaco = new Color(color: "Blanco").save()
+        Color blanco = new Color(color: "Blanco").save()
         Color negro = new Color(color: "Negro").save()
-        Color rosa = new Color(color: "Negro").save()
-        Color beige = new Color(color: "Negro").save()
-        Color cafe = new Color(color: "Negro").save()
-        Color verde = new Color(color: "Negro").save()
+        Color rosa = new Color(color: "Rosa").save()
+        Color cafe = new Color(color: "Cafe").save()
+        Color gris = new Color(color: "Gris").save()
+        Color amarillo = new Color(color: "Amarillo").save()
 
 
         def ropa = new Categoria(nombre: "Ropa")
@@ -39,8 +39,11 @@ class BootStrap {
         electronicos.addToSubcategorias([nombre: "Celulares"])
         electronicos.addToSubcategorias([nombre: "Laptops"])
         electronicos.addToSubcategorias([nombre: "Drones"])
-
+        electronicos.addToSubcategorias([nombre: "Bocinas"])
+        electronicos.addToSubcategorias([nombre: "Pantallas"])
         electronicos.save(flush:true,failOnError:true)
+
+
         def joyeria = new Categoria(nombre: "Joyeria")
         joyeria.addToSubcategorias([nombre: "Anillos"])
         joyeria.addToSubcategorias([nombre: "Aretes"])

@@ -4,37 +4,38 @@
 <html>
 	<head>
 		<meta name="layout" content="main">
-		<g:set var="entityName" value="${message(code: 'producto.label', default: 'Producto')}" />
+		<g:set var="entityName" value="${message(code: 'Producto.label', default: 'Producto')}" />
 		<title><g:message code="default.list.label" args="[entityName]" /></title>
 	</head>
 	<body>
-		<a href="#list-producto" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
-		<div class="nav" role="navigation">
-			<ul>
-				<li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
-				<li><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></li>
-			</ul>
-		</div>
+		<ul class="nav nav-tabs nav-justified">
+			<li role="presentation"><g:link controller="producto" action="index">Lista Productos</g:link></li>
+			<li role="presentation"><g:link controller="producto" action="create">Agregar Nuevo</g:link></li>
+		</ul>
+
 		<div id="list-producto" class="content scaffold-list" role="main">
-			<h1><g:message code="default.list.label" args="[entityName]" /></h1>
+			<h1><g:message property="Lista de Productos" message="Lista de Productos" args="[entityName]" /> <span class="badge">${productoInstanceCount}</span> </h1>
+			<li></li>
+			<li></li>
 			<g:if test="${flash.message}">
 				<div class="message" role="status">${flash.message}</div>
 			</g:if>
-			<table>
+			<table class="table">
 			<thead>
 					<tr>
 					
-						<g:sortableColumn property="codigo" title="${message(code: 'producto.codigo.label', default: 'Codigo')}" />
+
+						<g:sortableColumn property="nombre" title="${message(code: 'Producto.nombre.label', default: 'NOMBRE')}" />
+
+						<g:sortableColumn property="categoria" title="${message(code: 'producto.categoria.label', default: 'CATEGORIA')}" />
+
+						<g:sortableColumn property="subcategoria" title="${message(code: 'producto.subcategoria.label', default: 'SUBCATEGORIA')}" />
+
+						<g:sortableColumn property="color" title="${message(code: 'producto.color.label', default: 'COLOR')}" />
 					
-						<g:sortableColumn property="nombre" title="${message(code: 'producto.nombre.label', default: 'Nombre')}" />
-					
-						<th><g:message code="producto.categoria.label" default="Categoria" /></th>
-					
-						<th><g:message code="producto.subcategoria.label" default="Subcategoria" /></th>
-					
-						<th><g:message code="producto.color.label" default="Color" /></th>
-					
-						<g:sortableColumn property="precio" title="${message(code: 'producto.precio.label', default: 'Precio')}" />
+						<g:sortableColumn property="precio" title="${message(code: 'producto.precio.label', default: 'PRECIO')}" />
+
+						<g:sortableColumn property="imagen" title="${message(code: 'producto.imagen.label', default: 'IMAGEN')}" />
 					
 					</tr>
 				</thead>
@@ -53,6 +54,8 @@
 						<td>${fieldValue(bean: productoInstance, field: "color")}</td>
 					
 						<td>${fieldValue(bean: productoInstance, field: "precio")}</td>
+
+						<td><img class="img-thumbnail" src="imagen" alt=""> </td>
 					
 					</tr>
 				</g:each>

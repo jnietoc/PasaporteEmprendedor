@@ -38,9 +38,9 @@
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
 						<li class="active"><g:link controller="producto" action="index"> Productos <span class="sr-only">(current)</span></g:link></li>
-						<li><a href="#">Link</a></li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+						<li><a href="#">Promociones</a></li>
+						<li class="Marcas">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Marcas <span class="caret"></span></a>
 							<ul class="dropdown-menu">
 								<li><a href="#">Action</a></li>
 								<li><a href="#">Another action</a></li>
@@ -54,9 +54,9 @@
 					</ul>
 					<form class="navbar-form navbar-left">
 						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Search">
+							<input type="text" class="form-control" placeholder="Ejemplo: Jeans">
 						</div>
-						<button type="submit" class="btn btn-default">Submit</button>
+						<button type="submit" class="btn btn-default">Buscar</button>
 					</form>
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="#">Link</a></li>
@@ -79,5 +79,26 @@
 
 		<div class="footer" role="contentinfo"></div>
 		<div id="spinner" class="spinner" style="display:none;"><g:message code="spinner.alt" default="Loading&hellip;"/></div>
+
+		<footer>
+			<div class="jumbotron">
+				<div class="container">
+					<h1>Contacto</h1>
+					<p>Contáctanos estamos contigo las 24 horas del día</p>
+					<div>
+						<span class="glyphicon"></span>
+						<span>Álvaro Obregón #208 38800 Moroleón, Guanajuato, México</span>
+					</div>
+					<div>
+						<span class="glyphicon glyphicon-phone-alt"/>
+						<span>445 45 8 7449</span>
+					</div>
+					<div>
+						<span class="glyphicon glyphicon-envelope"/>
+						<span>pasaporte.emprendedor@gmail.com</span>
+					</div>
+				</div>
+			</div>
+		</footer>
 	</body>
 </html>
