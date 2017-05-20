@@ -81,24 +81,7 @@
 		<div id="spinner" class="spinner" style="display:none;"><g:message code="spinner.alt" default="Loading&hellip;"/></div>
 
 		<footer>
-			<div class="jumbotron">
-				<div class="container">
-					<h1>Contacto</h1>
-					<p>Contáctanos estamos contigo las 24 horas del día</p>
-					<div>
-						<span class="glyphicon"></span>
-						<span>Álvaro Obregón #208 38800 Moroleón, Guanajuato, México</span>
-					</div>
-					<div>
-						<span class="glyphicon glyphicon-phone-alt"/>
-						<span>445 45 8 7449</span>
-					</div>
-					<div>
-						<span class="glyphicon glyphicon-envelope"/>
-						<span>pasaporte.emprendedor@gmail.com</span>
-					</div>
-				</div>
-			</div>
+			© Company 2014
 		</footer>
 	</body>
 </html>

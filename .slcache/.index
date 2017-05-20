@@ -5633,3 +5633,11 @@ n:1489:org/apache/commons/logging/Log$debug$0
 n:1919:org/codehaus/groovy/transform/stc/TypeCheckingContext$EnclosingClosure
 n:289:org/codehaus/groovy/classgen/asm/OptimizingStatementWriter$1
 n:4381:org/eclipse/aether/util/ChecksumUtils
+n:2922:BuildConfig$_run_closure1$_closure5
+n:510:org/springframework/web/multipart/MultipartFile
+n:503:org/springframework/web/multipart/MultipartHttpServletRequest
+n:912:org/springframework/web/multipart/MultipartRequest
+n:4589:org/springframework/web/multipart/commons/CommonsMultipartFile
+n:2932:BuildConfig$_run_closure1$_closure5
+n:1565:org/slf4j/Logger$trace
+n:2879:org/apache/commons/lang/RandomStringUtils

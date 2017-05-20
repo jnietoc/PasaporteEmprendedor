@@ -8,6 +8,8 @@
 		<meta name="layout" content="main">
 		<g:set var="entityName" value="${message(code: 'Producto.label', default: 'Producto')}" />
 		<title><g:message code="default.create.label" args="[entityName]" /></title>
+		<asset:javascript src="uploadr.manifest.js"/>
+		<asset:stylesheet href="uploadr.manifest.css"/>
 	</head>
 	<body>
 		<ul class="nav nav-tabs nav-justified">

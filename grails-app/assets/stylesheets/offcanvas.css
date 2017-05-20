@@ -41,4 +41,18 @@
         top: 0;
         width: 50%; /* 6 columns */
     }
+
+    .sidebar-offcanvas-right {
+        position: absolute;
+        top: 0;
+        width: 50%; /* 6 columns */
+        right: -50%;
+    }
+
+    .sidebar-offcanvas-left {
+        position: absolute;
+        top: 0;
+        width: 50%; /* 6 columns */
+        left: -50%;
+    }
 }

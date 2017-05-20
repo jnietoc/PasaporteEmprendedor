@@ -1,12 +1,11 @@
-<%@ page import="com.pasaporte.emprendedor.compras.Producto" %>
+<%@ page import="org.apache.commons.lang.RandomStringUtils; com.pasaporte.emprendedor.compras.Producto" %>
 
 <div class="text-field ${hasErrors(bean: productoInstance, field: 'codigo', 'error')} required">
 	<label for="codigo">
 		<g:message code="producto.codigo.label" default="Codigo" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="codigo" class="text-field" required="" value="${productoInstance?.codigo}"/>
-
+	<g:textField name="codigo" class="text-field" required="" value="${productoInstance?.codigo}" />
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: productoInstance, field: 'nombre', 'error')} required">
@@ -59,7 +58,16 @@
 		<g:message code="producto.imagen.label" default="Imagen" />
 		<span class="required-indicator">*</span>
 	</label>
-    <input type="file" name="imagen" required="" value="${productoInstance?.imagen}"/>
-
+	<% def path = new File("/images/123") %>
+	<uploadr:add name="mySecondUploadr" path="${path}" direction="up" maxVisible="5" unsupported="${createLink(plugin: 'uploadr', controller: 'upload', action: 'warning')}">
+		<% path.listFiles().each { file -> %>
+		<uploadr:file name="${file.name}">
+			<uploadr:fileSize>${file.size()}</uploadr:fileSize>
+			<uploadr:fileModified>${file.lastModified()}</uploadr:fileModified>
+			<uploadr:fileId>myId-${org.apache.commons.lang.RandomStringUtils.random(32, true, true)}</uploadr:fileId>
+		</uploadr:file>
+		<% } %>
+	</uploadr:add>
+	<input type="hidden" name="imagen" value="/images/123" required=""/>
 </div>
 

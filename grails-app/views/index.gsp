@@ -1,4 +1,4 @@
-<%@ page import="com.pasaporte.emprendedor.compras.Producto" %>
+<%@ page import="org.apache.commons.lang.RandomStringUtils; com.pasaporte.emprendedor.compras.Producto" %>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -8,7 +8,7 @@
 	<body>
 		<div class="container">
 			<div class="row row-offcanvas row-offcanvas-left">
-				<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar"  >
+				<div class="col-xs-6 col-sm-3 sidebar-offcanvas-left" id="sidebar"  >
 					<div class="list-group">
 						<a class="list-group-item active" href="#" onclick="$('#ropa').fadeToggle('slow', 'swing')">ROPA</a>
 						<div id="ropa" style="display: none;">
@@ -51,7 +51,7 @@
 						<div class="row">
 							<div class="col-sm-9 col-md-9">
 								<div class="thumbnail">
-									<img src=${producto.getImagen()}  alt="...">
+									<img src="${resource(dir: 'images/1234', file: 'Rubi (35)-2.jpg)')}"  alt="...">
 									<div class="caption">
 										<h3>${producto.nombre}</h3>
 										<p>...</p>
