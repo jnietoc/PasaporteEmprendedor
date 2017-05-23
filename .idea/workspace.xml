@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05ca3672-806b-45f6-9559-0ce743225715" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/imagenes-productos/DQ1A36BANL/test.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/imagenes-productos/DQ1A36BANL/test2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/imagenes-productos/HMARVLFEBT/test.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/imagenes-productos/HMARVLFEBT/test2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/imagenes-productos/PLJTX4U4D1/test.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/imagenes-productos/PLJTX4U4D1/test2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/imagenes-productos/QWBERPZNDI/test.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/imagenes-productos/QWBERPZNDI/test2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/imagenes-productos/WFC4OWTHIT/test.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/imagenes-productos/hjlr4ACH2X/test.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/eclipseclasses/" />
     <ignored path="$USER_HOME$/.grails/" />
@@ -106,8 +117,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+            <state relative-caret-position="162">
+              <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -280,24 +291,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="web-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PasaporteEmprendedor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PasaporteEmprendedor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="imagenes-productos" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -847,12 +840,12 @@
       <workItem from="1495144083786" duration="15131000" />
       <workItem from="1495206533923" duration="17774000" />
       <workItem from="1495233518504" duration="38813000" />
-      <workItem from="1495482907147" duration="23890000" />
+      <workItem from="1495482907147" duration="24335000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="168700000" />
+    <option name="totallyTimeSpent" value="169145000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="1" width="1364" height="726" extended-state="0" />
@@ -1296,8 +1289,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+        <state relative-caret-position="162">
+          <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
           <folding />
         </state>
       </provider>
