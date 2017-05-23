@@ -49,13 +49,12 @@
 					</div>
 					<g:each in="${com.pasaporte.emprendedor.compras.Producto.list()}" var="producto">
 						<div class="row">
-							<div class="col-sm-9 col-md-9">
+							<div class="col-sm-6 col-md-4">
 								<div class="thumbnail">
-									<img src="${resource(dir: 'images/1234', file: 'Rubi (35)-2.jpg)')}"  alt="...">
+									<g:img dir="${producto.urlImagenes}" file="test.jsp"/>
 									<div class="caption">
-										<h3>${producto.nombre}</h3>
-										<p>...</p>
-										<p><a href="#" class="btn btn-primary" role="button">Ver Más</a> <a href="#" class="btn btn-default" role="button">Añadir al Carrito</a></p>
+										<h3>${producto}</h3>
+										<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
 									</div>
 								</div>
 							</div>

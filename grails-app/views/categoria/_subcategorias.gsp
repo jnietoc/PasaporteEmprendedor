@@ -1,0 +1,1 @@
+<g:select id="subcategoria" name="subcategoria.id" from="${subcategoriasList}" optionKey="id" required="" value="${productoInstance?.subcategoria?.id}" class="many-to-one"/>

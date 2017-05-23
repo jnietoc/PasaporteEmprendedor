@@ -18,6 +18,14 @@ class ProductoController {
 
     @Secured(['ROLE_ADMIN', 'ROLE_PROVEEDOR'])
     def show(Producto productoInstance) {
+        def imagesDir = grailsAttributes.getApplicationContext().getResource(productoInstance.urlImagenes).getFile().toString()
+
+        def imagenes = []
+        new File(imagesDir).eachFile { file ->
+            imagenes << file.getName()
+        }
+
+        productoInstance.imagenes = imagenes
         respond productoInstance
     }
 
@@ -38,6 +46,8 @@ class ProductoController {
             respond productoInstance.errors, view:'create'
             return
         }
+
+
 
         productoInstance.save flush:true
 

@@ -7,7 +7,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title><g:layoutTitle default="Grails"/></title>
+		<title><g:layoutTitle default="Pasaporte Emprendedor"/></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="${assetPath(src: 'favicon.ico')}" type="image/x-icon">
 		<link rel="apple-touch-icon" href="${assetPath(src: 'apple-touch-icon.png')}">
@@ -37,7 +37,7 @@
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
-						<li class="active"><g:link controller="producto" action="index"> Productos <span class="sr-only">(current)</span></g:link></li>
+						<li ><g:link controller="producto" action="index"> Productos <span class="sr-only">(current)</span></g:link></li>
 						<li><a href="#">Promociones</a></li>
 						<li class="Marcas">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Marcas <span class="caret"></span></a>
@@ -59,7 +59,7 @@
 						<button type="submit" class="btn btn-default">Buscar</button>
 					</form>
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#">Link</a></li>
+						<li><a href="#">Mi Carrito</a></li>
 						<li class="dropdown">
 							<sec:ifNotLoggedIn><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Iniciar Session <span class="caret"></span></a></sec:ifNotLoggedIn>
 							<sec:ifLoggedIn><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><sec:username/><span class="caret"></span></a></sec:ifLoggedIn>
@@ -82,6 +82,7 @@
 
 		<footer>
 			© Company 2014
+			<span class="shopping-cart" aria-hidden="true"></span>
 		</footer>
 	</body>
 </html>

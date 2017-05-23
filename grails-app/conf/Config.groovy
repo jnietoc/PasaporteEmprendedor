@@ -131,7 +131,9 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	'/**/images/**':    ['permitAll'],
 	'/**/favicon.ico':  ['permitAll'],
     '/upload/**':       ['ROLE_ADMIN','ROLE_PROVEEDOR'],
-    '**/producto/**':   ['permitAll'],
+    '/**/imagenes-productos/**':   ['permitAll'],
+    '/admin/dbconsole/**': ['IS_AUTHENTICATED_ANONYMOUSLY'],
+    '/dbconsole/**': ['IS_AUTHENTICATED_ANONYMOUSLY']
 ]
 
 grails.assets.plugin."twitter-bootstrap".excludes = ["**/*.less"]
